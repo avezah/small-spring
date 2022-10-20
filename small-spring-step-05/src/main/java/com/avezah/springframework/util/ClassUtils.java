@@ -1,4 +1,4 @@
-package com.avezah.springframework.utils;
+package com.avezah.springframework.util;
 
 public class ClassUtils {
 

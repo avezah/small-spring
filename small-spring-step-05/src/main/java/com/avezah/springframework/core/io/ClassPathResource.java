@@ -1,7 +1,7 @@
 package com.avezah.springframework.core.io;
 
 import cn.hutool.core.lang.Assert;
-import com.avezah.springframework.utils.ClassUtils;
+import com.avezah.springframework.util.ClassUtils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
