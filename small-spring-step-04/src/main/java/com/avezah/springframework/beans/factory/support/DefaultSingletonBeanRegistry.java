@@ -2,12 +2,12 @@ package com.avezah.springframework.beans.factory.support;
 
 import com.avezah.springframework.beans.factory.config.SingletonBeanRegistry;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
 
-	private Map<String, Object> singletonObjects = new HashMap<>();
+	private Map<String, Object> singletonObjects = new ConcurrentHashMap<>();
 
 	@Override
 	public Object getSingleton(String beanName) {
