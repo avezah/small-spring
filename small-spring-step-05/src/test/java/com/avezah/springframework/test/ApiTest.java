@@ -39,7 +39,8 @@ public class ApiTest {
 
         // 5. 获取 userService
         UserService userService = (UserService) beanFactory.getBean("userService");
-        userService.queryUserInfo();
+        String result = userService.queryUserInfo();
+        System.out.println("测试结果：" + result);
     }
 
     private ResourceLoader resourceLoader;
