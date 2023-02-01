@@ -2,7 +2,7 @@
 
 IOC Part  
 
-- [x] step-01 简单bean容器
+- [x] step-01 简单Bean容器
 - [x] step-02 Bean的定义、注册
 - [x] step-03 含参构造函数Bean的实例化及策略
 - [x] step-04 属性注入、依赖注入
@@ -14,6 +14,8 @@ IOC Part
 - [x] step-10 容器事件及监听器
 
 AOP Part
+
+- [x] step-11 jdk代理和cglib代理，实现AOP切面
 
 Extension
 
