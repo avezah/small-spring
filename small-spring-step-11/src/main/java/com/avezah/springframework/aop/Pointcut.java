@@ -1,6 +1,6 @@
 package com.avezah.springframework.aop;
 
-public interface PointCut {
+public interface Pointcut {
 
     ClassFilter getClassFilter();
 

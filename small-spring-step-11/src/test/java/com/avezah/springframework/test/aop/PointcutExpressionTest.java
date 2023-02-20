@@ -1,6 +1,6 @@
 package com.avezah.springframework.test.aop;
 
-import com.avezah.springframework.aop.aspectj.AspectJExpressionPointCut;
+import com.avezah.springframework.aop.aspectj.AspectJExpressionPointcut;
 import com.avezah.springframework.test.service.Sender;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
@@ -11,7 +11,7 @@ public class PointcutExpressionTest {
 
     @Test
     public void testPointcutExpression() throws Exception {
-        AspectJExpressionPointCut pointCut = new AspectJExpressionPointCut("execution(* com.avezah.springframework.test.service.Sender.*(..))");
+        AspectJExpressionPointcut pointCut = new AspectJExpressionPointcut("execution(* com.avezah.springframework.test.service.Sender.*(..))");
         Class<Sender> clazz = Sender.class;
         Method method = clazz.getDeclaredMethod("send");
 

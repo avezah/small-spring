@@ -3,7 +3,7 @@ package com.avezah.springframework.test.aop;
 import com.avezah.springframework.aop.AdvisedSupport;
 import com.avezah.springframework.aop.MethodMatcher;
 import com.avezah.springframework.aop.TargetSource;
-import com.avezah.springframework.aop.aspectj.AspectJExpressionPointCut;
+import com.avezah.springframework.aop.aspectj.AspectJExpressionPointcut;
 import com.avezah.springframework.aop.framework.Cglib2AopProxy;
 import com.avezah.springframework.aop.framework.JdkDynamicAopProxy;
 import com.avezah.springframework.test.common.SenderInterceptor;
@@ -24,7 +24,7 @@ public class DynamicProxyTest {
         advisedSupport = new AdvisedSupport();
         TargetSource targetSource = new TargetSource(sender);
         SenderInterceptor methodInterceptor = new SenderInterceptor();
-        MethodMatcher methodMatcher = new AspectJExpressionPointCut("execution(* com.avezah.springframework.test.service.Sender.*(..))");
+        MethodMatcher methodMatcher = new AspectJExpressionPointcut("execution(* com.avezah.springframework.test.service.Sender.*(..))");
         advisedSupport.setTargetSource(targetSource);
         advisedSupport.setMethodInterceptor(methodInterceptor);
         advisedSupport.setMethodMatcher(methodMatcher);
