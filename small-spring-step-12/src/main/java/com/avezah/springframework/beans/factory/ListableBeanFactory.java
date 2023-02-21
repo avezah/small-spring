@@ -1,0 +1,12 @@
+package com.avezah.springframework.beans.factory;
+
+import com.avezah.springframework.beans.BeansException;
+
+import java.util.Map;
+
+public interface ListableBeanFactory extends BeanFactory{
+
+    <T> Map<String, T> getBeansOfType(Class<T> type) throws BeansException;
+
+    String[] getBeanDefinitionNames();
+}
