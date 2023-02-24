@@ -1,21 +1,27 @@
 # small-spring
 
-IOC Part  
+## Inspiration & Reference
 
-- [x] step-01 简单Bean容器
-- [x] step-02 Bean的定义、注册
-- [x] step-03 含参构造函数Bean的实例化及策略
-- [x] step-04 属性注入、依赖注入
-- [x] step-05 解析XML注册Bean
-- [x] step-06 应用上下文：ApplicationContext
-- [x] step-07 初始化方法、销毁方法
-- [x] step-08 感知接口：Aware
-- [x] step-09 对象作用域、FactoryBean
-- [x] step-10 容器事件及监听器
+- https://github.com/DerekYRC/mini-spring
+- https://github.com/code4craft/tiny-spring
+- https://github.com/fuzhengwei/small-spring
 
-AOP Part
+## Steps
 
-- [x] step-11 jdk代理和cglib代理，实现AOP切面
+IOC
 
-Extension
+- [x] step-01 Simple bean factory
+- [x] step-02 Bean definition and registry
+- [x] step-03 Instantiation strategy
+- [x] step-04 Populate bean with values
+- [x] step-05 Load bean from resource
+- [x] step-06 ApplicationContext
+- [x] step-07 Init method and destroy method
+- [x] step-08 Aware
+- [x] step-09 Scope and factory bean
+- [x] step-10 Event and event listener
 
+AOP
+
+- [x] step-11 Jdk and cglib dynamic proxy
+- [x] step-12 Auto proxy
