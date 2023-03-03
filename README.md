@@ -25,3 +25,4 @@ AOP
 
 - [x] step-11 Jdk and cglib dynamic proxy
 - [x] step-12 Auto proxy
+- [x] step-13 Package scan and placeholder configure
